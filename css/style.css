@@ -148,6 +148,7 @@ a {
 	left: 0px;
 	z-index: -1;
 	text-align: center;
+	width: 100%;
 }
 
 #giphy img {
