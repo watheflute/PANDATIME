@@ -7,10 +7,18 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	font-family: "Chelsea Market", cursive;
+	color: white;
+}
+
+.bodyClass {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 button {
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
 	color: white;
 	font-family: "Chelsea Market", cursive;
 	padding: 10px;
@@ -55,7 +63,7 @@ button[disabled] {
 	margin: auto;
 }
 
-fieldset {
+fieldset, #links {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	background-color: rgba(255, 255, 255, 0.1);
 	-moz-border-radius: 5px;
@@ -79,3 +87,39 @@ legend {
 	color: red;
 }
 
+a {
+	color: white;
+}
+
+#youtube, #twitch, #wwf {
+	width: 50px;
+	padding: 2px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#youtube {
+	background-color: white;	
+}
+
+#links {
+	margin-top: 10px;
+}
+
+#links td {
+	padding: 5px;
+}
+
+#dancingPanda {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	text-align: center;
+	width: 100%;
+}
+
+#dancingPanda img {
+	width: 80%;
+}

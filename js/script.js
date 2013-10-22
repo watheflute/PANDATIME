@@ -1,12 +1,9 @@
 var audioContext;
 var soundboard = $("#soundboard");
+var buttonBackgroundColor = "rgba(0, 0, 0, 0.2)";
+var isUltraPandaTime = false;
 
 var sounds = {
-		"panda": {
-			"filename": "panda.mp3", 
-			"title": "Panda", 
-			"type": "sound", 
-			"key": "p"},
 		"aaahhh": {
 			"filename": "aaahhh.mp3", 
 			"title": "AAAAH", 
@@ -31,20 +28,32 @@ var sounds = {
 			"filename": "ooooh_yes.mp3", 
 			"title": "OOOOH YES", 
 			"type": "sound"},
+		"xeph_waaaa": {
+			"filename": "xeph_waaaa.mp3", 
+			"title": "Xeph waaaa", 
+			"type": "sound",
+			"key": "x"},
 		"they_want_us": {
 			"filename": "they_want_us.mp3", 
 			"title": "They want us", 
 			"type": "loop",
 			"key": "t"},
-		"xeph_waaaa": {
-			"filename": "xeph_waaaa.mp3", 
-			"title": "Xeph waaaa", 
-			"type": "sound",
-			"key": "x"}};
+		"panda_time": {
+			"filename": "panda_time.mp3",
+			"title": "Panda Time",
+			"type": "loop",
+			"key": "p"},
+		"sexy_music": {
+			"filename": "sexy_music.mp3",
+			"title": "Sexy Music",
+			"type": "loop",
+			"key": "s"}
+		};
 
 var soundKeys = Object.keys(sounds);
 var currentSoundLoading = 0;
-main();
+
+$(document).ready(main);
 
 function main() {
 	try {
@@ -102,7 +111,7 @@ function playSound(key) {
 		sounds[key].source.stop(0);
 		sounds[key].source.onended = null;
 		sounds[key].source = null;
-		$("#" + key).css("background-color", "rgba(0, 0, 0, 0)");
+		$("#" + key).css("background-color", buttonBackgroundColor);
 	}
 	
 	if (!sounds[key].source) {
@@ -113,7 +122,7 @@ function playSound(key) {
 		sounds[key].source.start(0);
 		
 		sounds[key].source.onended = function() {
-			$("#" + key).css("background-color", "rgba(0, 0, 0, 0)");
+			$("#" + key).css("background-color", buttonBackgroundColor);
 		};
 	}
 }
@@ -123,7 +132,7 @@ function playLoop(key) {
 		sounds[key].source.stop(0);
 		sounds[key].source.onended = null;
 		sounds[key].source = null;
-		$("#" + key).css("background-color", "rgba(0, 0, 0, 0)");
+		$("#" + key).css("background-color", buttonBackgroundColor);
 	}
 	else {
 		sounds[key].source = audioContext.createBufferSource();
@@ -132,10 +141,6 @@ function playLoop(key) {
 		sounds[key].source.loop = true;
 		$("#" + key).css("background-color", "orange");
 		sounds[key].source.start(0);
-		
-		sounds[key].source.onended = function() {
-			//$("#" + key).css("background-color", "rgba(0, 0, 0, 0)");
-		};
 	}
 }
 
@@ -168,13 +173,54 @@ function stopAllSounds() {
 			sounds[key].source.stop(0);
 			sounds[key].source.onended = null;
 			sounds[key].source = null;			
-			$("#" + key).css("background-color", "rgba(0, 0, 0, 0)");
+			$("#" + key).css("background-color", buttonBackgroundColor);
 		}
 	}
 }
 
 function ultraPandatime() {
-	alert("ULTRA PANDA TIME");
+	if (!isUltraPandaTime) {
+		isUltraPandaTime = true;
+		$("#ultraPandatime").html("GTFO!!!");
+		$("body").css("background", 'url("img/stars.gif") repeat center center fixed');
+		$("body").css("-webkit-background-size", "auto");
+		$("body").css("-moz-background-size", "auto");
+		$("body").css("-o-background-size", "auto");
+		$("body").css("background-size", "auto");
+		$("#dancingPanda").css("display", "inline");
+		
+		if (sounds["panda_time"].source) {
+			sounds["panda_time"].source.stop(0);
+			sounds["panda_time"].source.onended = null;
+			sounds["panda_time"].source = null;
+			$("#" + "panda_time").css("background-color", buttonBackgroundColor);
+		}
+		
+		sounds["panda_time"].source = audioContext.createBufferSource();
+		sounds["panda_time"].source.buffer = sounds["panda_time"].buffer;
+		sounds["panda_time"].source.connect(audioContext.destination);
+		sounds["panda_time"].source.loop = true;
+		$("#" + "panda_time").css("background-color", "orange");
+		sounds["panda_time"].source.start(0);
+		
+	}
+	else {
+		isUltraPandaTime = false;
+		$("#ultraPandatime").html("ULTRA PANDA TIME!!!");
+		$("body").css("background", 'url("img/panda.jpg") no-repeat center center fixed');
+		$("body").css("-webkit-background-size", "cover");
+		$("body").css("-moz-background-size", "cover");
+		$("body").css("-o-background-size", "cover");
+		$("body").css("background-size", "cover");
+		$("#dancingPanda").css("display", "none");
+		
+		if (sounds["panda_time"].source) {
+			sounds["panda_time"].source.stop(0);
+			sounds["panda_time"].source.onended = null;
+			sounds["panda_time"].source = null;
+			$("#" + "panda_time").css("background-color", buttonBackgroundColor);
+		}
+	}
 }
 
 
