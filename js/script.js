@@ -96,7 +96,7 @@ function playLoop(key) {
 		sounds[key].source.start(0);
 		
 		sounds[key].source.onended = function() {
-			$("#" + key).css("background-color", "rgba(0, 0, 0, 0)");
+			//$("#" + key).css("background-color", "rgba(0, 0, 0, 0)");
 		};
 	}
 }
@@ -109,8 +109,8 @@ function stopAllSounds() {
 	for (var key in sounds) {
 		if (sounds[key].source) {
 			sounds[key].source.stop(0);
-			sounds[key].source = null;
 			sounds[key].source.onended = null;
+			sounds[key].source = null;			
 			$("#" + key).css("background-color", "rgba(0, 0, 0, 0)");
 		}
 	}
