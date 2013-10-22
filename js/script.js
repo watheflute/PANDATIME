@@ -12,6 +12,8 @@ var sounds = {"panda": {"filename": "panda.mp3", "title": "Panda", "type": "soun
               "they_want_us": {"filename": "they_want_us.mp3", "title": "They want us", "type": "loop"},
               "xeph_waaaa": {"filename": "xeph_waaaa.mp3", "title": "Xeph waaaa", "type": "sound"}};
 
+var soundKeys = Object.keys(sounds);
+var currentSoundLoading = 0;
 main();
 
 function main() {
@@ -26,14 +28,16 @@ function main() {
 	$("#soundboard").css("display", "block");
 	$("#error").css("display", "none");
 	
-	for (var key in sounds) {
-		var request = new XMLHttpRequest();
-		request.open("GET", "sound/" + sounds[key].filename, true);
-		request.responseType = "arraybuffer";
-		request.key = key;
-		request.onload = onSoundLoad;
-		request.send();
-	}
+	loadSound();
+}
+
+function loadSound() {
+	var request = new XMLHttpRequest();
+	request.open("GET", "sound/" + sounds[soundKeys[currentSoundLoading]].filename, true);
+	request.responseType = "arraybuffer";
+	request.key = soundKeys[currentSoundLoading];
+	request.onload = onSoundLoad;
+	request.send();
 }
 
 function onSoundLoad(xhr) {
@@ -47,6 +51,10 @@ function onSoundLoad(xhr) {
 		}
 		else if (sounds[key].type == "loop") {
 			loopDiv.append('<button id="' + key + '" onclick="playLoop(\'' + key + '\');">' + sounds[key].title + '</button>');
+		}
+		
+		if (++currentSoundLoading < soundKeys.length) {
+			loadSound();
 		}
 	}, function() {});
 }
