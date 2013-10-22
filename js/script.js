@@ -109,6 +109,8 @@ function stopAllSounds() {
 	for (var key in sounds) {
 		if (sounds[key].source) {
 			sounds[key].source.stop(0);
+			sounds[key].source = null;
+			sounds[key].source.onended = null;
 			$("#" + key).css("background-color", "rgba(0, 0, 0, 0)");
 		}
 	}
