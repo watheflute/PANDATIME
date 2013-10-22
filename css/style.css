@@ -32,9 +32,12 @@ button[disabled] {
 	text-align: center;
 	font-family: Arial, sans-serif;
 	font-weight: bold;
-	display: none;
 }
 
 #stopAllSounds {
 	background-color: red;
+}
+
+#soundboard {
+	display: none;
 }

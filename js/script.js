@@ -3,21 +3,28 @@ var soundboard = $("#soundboard");
 var sounds = {"aboutYouNow": {"filename": "sound1.mp3", "title": "About You Now"},
               "rimshot": {"filename": "rimshot.mp3", "title": "Rimshot"}};
 
-try {
-	window.AudioContext =  window.AudioContext || window.webkitAudioContext;
-	audioContext = new AudioContext();
-}
-catch (e) {
-	$("#error").css("display", "block");
-}
+main();
 
-for (var key in sounds) {
-	var request = new XMLHttpRequest();
-	request.open("GET", "sound/" + sounds[key].filename, true);
-	request.responseType = "arraybuffer";
-	request.key = key;
-	request.onload = onSoundLoad;
-	request.send();
+function main() {
+	try {
+		window.AudioContext =  window.AudioContext || window.webkitAudioContext;
+		audioContext = new AudioContext();
+	}
+	catch (e) {
+		return;
+	}
+	
+	$("#soundboard").css("display", "block");
+	$("#error").css("display", "none");
+	
+	for (var key in sounds) {
+		var request = new XMLHttpRequest();
+		request.open("GET", "sound/" + sounds[key].filename, true);
+		request.responseType = "arraybuffer";
+		request.key = key;
+		request.onload = onSoundLoad;
+		request.send();
+	}
 }
 
 function onSoundLoad(xhr) {
