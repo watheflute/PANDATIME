@@ -91,14 +91,14 @@ a {
 	color: white;
 }
 
-#youtube, #twitch, #wwf {
+.youtube, #twitch, #wwf {
 	width: 50px;
 	padding: 2px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 
-#youtube {
+.youtube {
 	background-color: white;	
 }
 
