@@ -19,18 +19,14 @@ var sounds = {
 			"title": "I show you my manliness!", 
 			"type": "sound",
 			"key": "i"},
-		"ooh_yeah": {
-			"filename": "ooh_yeah.mp3", 
-			"title": "OOOH Yeah", 
-			"type": "sound",
-			"key": "o"},
 		"ooooh_yes": {
 			"filename": "ooooh_yes.mp3", 
 			"title": "OOOOH YES", 
-			"type": "sound"},
-		"xeph_waaaa": {
-			"filename": "xeph_waaaa.mp3", 
-			"title": "Xeph waaaa", 
+			"type": "sound",
+			"key": "o"},
+		"xeph_aaahaha": {
+			"filename": "xeph_aaahaha.mp3", 
+			"title": "Xeph AaaaAhAH", 
 			"type": "sound",
 			"key": "x"},
 		"they_want_us": {
@@ -46,8 +42,7 @@ var sounds = {
 		"sexy_music": {
 			"filename": "sexy_music.mp3",
 			"title": "Sexy Music",
-			"type": "loop",
-			"key": "s"}
+			"type": "loop"}
 		};
 
 var soundKeys = Object.keys(sounds);
