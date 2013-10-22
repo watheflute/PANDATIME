@@ -37,8 +37,16 @@ button[disabled] {
 	font-weight: bold;
 }
 
-#stopAllSounds, #stopAllLoops {
+#stopAllSounds {
 	background-color: red;
+}
+
+#stopAllSounds:first-letter {
+	color: yellow;
+}
+
+#ultraPandatime:first-letter {
+	color: red;
 }
 
 #soundboard {
@@ -65,5 +73,9 @@ legend {
 #ultraPandatime {
 	background-color: black;
 	color: yellow;
+}
+
+.key:first-letter {
+	color: red;
 }
 

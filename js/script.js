@@ -1,16 +1,46 @@
 var audioContext;
 var soundboard = $("#soundboard");
-var soundDiv = $("#soundDiv");
-var loopDiv = $("#loopDiv");
 
-var sounds = {"panda": {"filename": "panda.mp3", "title": "Panda", "type": "sound"},
-              "aaahhh": {"filename": "aaahhh.mp3", "title": "AAAAH", "type": "sound"},
-              "hmm": {"filename": "hmm.mp3", "title": "HMMMM", "type": "sound"},
-              "i_show_you_my_manliness": {"filename": "i_show_you_my_manliness.mp3", "title": "I show you my manliness!", "type": "sound"},
-              "ooh_yeah": {"filename": "ooh_yeah.mp3", "title": "OOOH Yeah", "type": "sound"},
-              "ooooh_yes": {"filename": "ooooh_yes.mp3", "title": "OOOOH YES", "type": "sound"},
-              "they_want_us": {"filename": "they_want_us.mp3", "title": "They want us", "type": "loop"},
-              "xeph_waaaa": {"filename": "xeph_waaaa.mp3", "title": "Xeph waaaa", "type": "sound"}};
+var sounds = {
+		"panda": {
+			"filename": "panda.mp3", 
+			"title": "Panda", 
+			"type": "sound", 
+			"key": "p"},
+		"aaahhh": {
+			"filename": "aaahhh.mp3", 
+			"title": "AAAAH", 
+			"type": "sound", 
+			"key": "a"},
+		"hmm": {
+			"filename": "hmm.mp3", 
+			"title": "HMMMM", 
+			"type": "sound",
+			"key": "h"},
+		"i_show_you_my_manliness": {
+			"filename": "i_show_you_my_manliness.mp3", 
+			"title": "I show you my manliness!", 
+			"type": "sound",
+			"key": "i"},
+		"ooh_yeah": {
+			"filename": "ooh_yeah.mp3", 
+			"title": "OOOH Yeah", 
+			"type": "sound",
+			"key": "o"},
+		"ooooh_yes": {
+			"filename": "ooooh_yes.mp3", 
+			"title": "OOOOH YES", 
+			"type": "sound"},
+		"they_want_us": {
+			"filename": "they_want_us.mp3", 
+			"title": "They want us", 
+			"type": "loop",
+			"key": "t"},
+		"xeph_waaaa": {
+			"filename": "xeph_waaaa.mp3", 
+			"title": "Xeph waaaa", 
+			"type": "sound",
+			"key": "x"}};
 
 var soundKeys = Object.keys(sounds);
 var currentSoundLoading = 0;
@@ -45,13 +75,21 @@ function onSoundLoad(xhr) {
 	
 	audioContext.decodeAudioData(xhr.target.response, function(buffer) {
 		sounds[key].buffer = buffer;
+		var button = '<button id="' + key + '" ';
 		
 		if (sounds[key].type == "sound") {
-			soundDiv.append('<button id="' + key + '" onclick="playSound(\'' + key + '\');">' + sounds[key].title + '</button>');
+			button += 'onclick="playSound(\'' + key + '\');" ';
 		}
 		else if (sounds[key].type == "loop") {
-			loopDiv.append('<button id="' + key + '" onclick="playLoop(\'' + key + '\');">' + sounds[key].title + '</button>');
+			button += 'onclick="playLoop(\'' + key + '\');" ';
 		}
+		
+		if (sounds[key].key) {
+			button += 'class="key" ';
+		}
+		
+		button += '>' + sounds[key].title + '</button>';
+		$("#" + sounds[key].type + "Div").append(button);
 		
 		if (++currentSoundLoading < soundKeys.length) {
 			loadSound();
@@ -101,8 +139,27 @@ function playLoop(key) {
 	}
 }
 
-$(document).keypress(function() {
+$(document).keypress(function(k) {
+	var charCode = String.fromCharCode(k.which);
 	
+	if (charCode == "s") {
+		stopAllSounds();
+	}
+	else if (charCode == "u") {
+		ultraPandatime();
+	}
+	else {
+		for (var key in sounds) {
+			if (sounds[key].key == charCode) {
+				if (sounds[key].type == "sound") {
+					playSound(key);
+				}
+				else if (sounds[key].type == "loop") {
+					playLoop(key);
+				}
+			}
+		}
+	}
 });
 
 function stopAllSounds() {
@@ -117,7 +174,7 @@ function stopAllSounds() {
 }
 
 function ultraPandatime() {
-	
+	alert("ULTRA PANDA TIME");
 }
 
 
