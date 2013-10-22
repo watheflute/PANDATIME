@@ -1,21 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Chelsea+Market);
+
 body {
 	background: url("../img/panda.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-family: "Chelsea Market", cursive;
 }
 
 button {
 	background-color: rgba(0, 0, 0, 0);
 	color: white;
-	font: Arial, sans-serif;
+	font-family: "Chelsea Market", cursive;
 	padding: 10px;
-	margin: 10px;
-	font-size: 200%;
-	-moz-box-shadow: 2px 2px 2px white;
-	-webkit-box-shadow: 2px 2px 2px white;
-	box-shadow: 2px 2px 2px white;
+	margin: 5px;
+	font-size: 150%;
+	-moz-box-shadow: 1px 1px 1px white;
+	-webkit-box-shadow: 1px 1px 1px white;
+	box-shadow: 1px 1px 1px white;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
@@ -34,10 +37,33 @@ button[disabled] {
 	font-weight: bold;
 }
 
-#stopAllSounds {
+#stopAllSounds, #stopAllLoops {
 	background-color: red;
 }
 
 #soundboard {
 	display: none;
+	width: 80%;
+	margin: auto;
 }
+
+fieldset {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.1);
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+legend {
+	color: white;
+}
+
+#stop {
+	text-align: center;
+}
+
+#ultraPandatime {
+	background-color: black;
+	color: yellow;
+}
+
