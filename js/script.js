@@ -1,7 +1,9 @@
 var audioContext;
 var soundboard = $("#soundboard");
 var sounds = {"aboutYouNow": {"filename": "sound1.mp3", "title": "About You Now"},
-              "rimshot": {"filename": "rimshot.mp3", "title": "Rimshot"}};
+              "rimshot": {"filename": "rimshot.mp3", "title": "Rimshot"},
+              "coq": {"filename": "coq.mp3", "title": "Coq"},
+              "panda": {"filename": "panda.mp3", "title": "Panda"}};
 
 main();
 
@@ -37,17 +39,17 @@ function onSoundLoad(xhr) {
 }
 
 function play(key) {
+	if (sounds[key].source) {
+		sounds[key].source.stop(0);
+		sounds[key].source = null;
+	}
+	
 	if (!sounds[key].source) {
 		sounds[key].source = audioContext.createBufferSource();
 		sounds[key].source.buffer = sounds[key].buffer;
 		sounds[key].source.connect(audioContext.destination);
 		sounds[key].source.start(0);
-		$("#" + key).attr("disabled", "disabled");
-		
-		sounds[key].source.onended = function() {
-			sounds[key].source = null;
-			$("#" + key).removeAttr("disabled");
-		};
+		sounds[key].source.onended = function() {};
 	}
 }
 
