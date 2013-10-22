@@ -183,6 +183,9 @@ function ultraPandatime() {
 		$("body").css("-o-background-size", "auto");
 		$("body").css("background-size", "auto");
 		$("#dancingPanda").css("display", "inline");
+		$("#dancingPandaSmall").css("display", "inline");
+		$("#pandaKiss").css("display", "inline");
+		$("#giphy").css("display", "inline");
 		
 		if (sounds["panda_time"].source) {
 			sounds["panda_time"].source.stop(0);
@@ -208,6 +211,9 @@ function ultraPandatime() {
 		$("body").css("-o-background-size", "cover");
 		$("body").css("background-size", "cover");
 		$("#dancingPanda").css("display", "none");
+		$("#dancingPandaSmall").css("display", "none");
+		$("#pandaKiss").css("display", "none");
+		$("#giphy").css("display", "none");
 		
 		if (sounds["panda_time"].source) {
 			sounds["panda_time"].source.stop(0);

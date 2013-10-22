@@ -8,6 +8,7 @@ body {
 	background-size: cover;
 	font-family: "Chelsea Market", cursive;
 	color: white;
+	background-color: black;
 }
 
 .bodyClass {
@@ -113,13 +114,43 @@ a {
 #dancingPanda {
 	display: none;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 0px;
+	left: 0px;
 	z-index: -1;
 	text-align: center;
 	width: 100%;
 }
 
 #dancingPanda img {
-	width: 80%;
+	width: 500px;
 }
+
+#dancingPandaSmall {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: -1;
+}
+
+#pandaKiss {
+	display: none;
+	position: absolute;
+	top: 400px;
+	left: 500px;
+	z-index: -1;
+}
+
+#giphy {
+	display: none;
+	position: absolute;
+	top: 500px;
+	left: 0px;
+	z-index: -1;
+	text-align: center;
+}
+
+#giphy img {
+	width: 500px;
+}
+
