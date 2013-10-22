@@ -1,0 +1,40 @@
+body {
+	background: url("../img/panda.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+button {
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	font: Arial, sans-serif;
+	padding: 10px;
+	margin: 10px;
+	font-size: 200%;
+	-moz-box-shadow: 2px 2px 2px white;
+	-webkit-box-shadow: 2px 2px 2px white;
+	box-shadow: 2px 2px 2px white;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+button[disabled] {
+	background-color: lime;
+}
+
+#error {
+	color: red;
+	font-size: 500%;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	display: none;
+}
+
+#stopAllSounds {
+	background-color: red;
+}
