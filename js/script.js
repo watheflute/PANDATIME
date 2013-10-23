@@ -90,7 +90,11 @@ var sounds = {
 			"filename": "wow.mp3",
 			"title": "Wow",
 			"type": "sound",
-			"key": "w"}
+			"key": "w"},
+		"more_sexy_music": {
+			"filename": "more_sexy_music.mp3",
+			"title": "More sexy music",
+			"type": "loop"}
 		};
 
 var soundKeys = Object.keys(sounds);
