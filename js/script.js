@@ -42,25 +42,11 @@ var sounds = {
 			"title": "GG Button",
 			"type": "sound",
 			"key": "g"},
-		"they_want_us": {
-			"filename": "they_want_us.mp3", 
-			"title": "They want us", 
-			"type": "loop",
-			"key": "t"},
 		"panda_time": {
 			"filename": "panda_time.mp3",
 			"title": "Panda Time",
 			"type": "loop",
 			"key": "p"},
-		"sexy_music": {
-			"filename": "sexy_music.mp3",
-			"title": "Sexy Music",
-			"type": "loop"},
-		"just_you_know_why": {
-			"filename": "just_you_know_why.mp3",
-			"title": "Just you know why",
-			"type": "loop",
-			"key": "j"},
 		"aaaah_thats_harsh": {
 			"filename": "aaaah_thats_harsh.mp3",
 			"title": "AAh that's harsh",
@@ -91,10 +77,24 @@ var sounds = {
 			"title": "Wow",
 			"type": "sound",
 			"key": "w"},
+		"they_want_us": {
+			"filename": "they_want_us.mp3", 
+			"title": "They want us", 
+			"type": "loop",
+			"key": "t"},
+		"sexy_music": {
+			"filename": "sexy_music.mp3",
+			"title": "Sexy Music",
+			"type": "loop"},
 		"more_sexy_music": {
 			"filename": "more_sexy_music.mp3",
 			"title": "More sexy music",
-			"type": "loop"}
+			"type": "loop"},
+		"just_you_know_why": {
+			"filename": "just_you_know_why.mp3",
+			"title": "Just you know why",
+			"type": "loop",
+			"key": "j"}
 		};
 
 var soundKeys = Object.keys(sounds);
