@@ -33,6 +33,11 @@ var sounds = {
 			"filename": "xeph_schmetterling.mp3",
 			"title": "SCHMETTERLING!",
 			"type": "sound"},
+		"gg": {
+			"filename": "gg.mp3",
+			"title": "GG Button",
+			"type": "sound",
+			"key": "g"},
 		"they_want_us": {
 			"filename": "they_want_us.mp3", 
 			"title": "They want us", 
