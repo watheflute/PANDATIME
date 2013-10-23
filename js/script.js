@@ -24,6 +24,10 @@ var sounds = {
 			"title": "OuuH YES", 
 			"type": "sound",
 			"key": "o"},
+		"teldo_panda_time": {
+			"filename": "teldo_panda_time.mp3",
+			"title": "Pandatime!",
+			"type": "sound"},
 		"xeph_aaahaha": {
 			"filename": "xeph_aaahaha.mp3", 
 			"title": "Xeph AaaaAhAH", 
@@ -56,7 +60,37 @@ var sounds = {
 			"filename": "just_you_know_why.mp3",
 			"title": "Just you know why",
 			"type": "loop",
-			"key": "j"}
+			"key": "j"},
+		"aaaah_thats_harsh": {
+			"filename": "aaaah_thats_harsh.mp3",
+			"title": "AAh that's harsh",
+			"type": "sound"},
+		"aww_poor_teldo": {
+			"filename": "aww_poor_teldo.mp3",
+			"title": "Aww poor Teldo",
+			"type": "sound"},
+		"damn": {
+			"filename": "damn.mp3",
+			"title": "Damn!",
+			"type": "sound",
+			"key": "d"},
+		"he_could_kill_me": {
+			"filename": "he_could_kill_me.mp3",
+			"title": "He could kill me!",
+			"type": "sound"},
+		"hungry_for_pandatime": {
+			"filename": "hungry_for_pandatime.mp3",
+			"title": "Hungry for pandatime",
+			"type": "sound"},
+		"oh_my_got": {
+			"filename": "oh_my_got.mp3",
+			"title": "oh my got",
+			"type": "sound"},
+		"wow": {
+			"filename": "wow.mp3",
+			"title": "Wow",
+			"type": "sound",
+			"key": "w"}
 		};
 
 var soundKeys = Object.keys(sounds);
