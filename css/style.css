@@ -155,3 +155,15 @@ a {
 	width: 500px;
 }
 
+#pandaRoll {
+	display: none;
+	position: absolute;
+	top: 600px;
+	left: 10px;
+	z-index: -1;
+}
+
+#pandaRoll img {
+	width: 300px;
+}
+

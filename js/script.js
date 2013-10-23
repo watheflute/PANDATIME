@@ -29,11 +29,6 @@ var sounds = {
 			"title": "Xeph AaaaAhAH", 
 			"type": "sound",
 			"key": "x"},
-		"niah_can_play": {
-			"filename": "niah_can_play.mp3",
-			"title": "Nya can play... oh",
-			"type": "sound",
-			"key": "n"},
 		"xeph_schmetterling": {
 			"filename": "xeph_schmetterling.mp3",
 			"title": "SCHMETTERLING!",
@@ -200,6 +195,7 @@ function ultraPandatime() {
 		$("#dancingPandaSmall").css("display", "inline");
 		$("#pandaKiss").css("display", "inline");
 		$("#giphy").css("display", "inline");
+		$("#pandaRoll").css("display", "inline");
 		
 		if (sounds["panda_time"].source) {
 			sounds["panda_time"].source.stop(0);
@@ -228,6 +224,7 @@ function ultraPandatime() {
 		$("#dancingPandaSmall").css("display", "none");
 		$("#pandaKiss").css("display", "none");
 		$("#giphy").css("display", "none");
+		$("#pandaRoll").css("display", "none");
 		
 		if (sounds["panda_time"].source) {
 			sounds["panda_time"].source.stop(0);
