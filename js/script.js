@@ -106,6 +106,10 @@ var sounds = {
 			"filename": "bam.mp3",
 			"title": "BAM!",
 			"type": "sound"},
+		"doomhammer_ooh": {
+			"filename": "doomhammer_ooh.mp3",
+			"title": "Doomhammer, ooh!",
+			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
