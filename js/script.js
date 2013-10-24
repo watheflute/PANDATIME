@@ -86,6 +86,10 @@ var sounds = {
 			"title": "BlooLooLoop!",
 			"type": "sound",
 			"key": "b"},
+		"aaaAAAH": {
+			"filename": "aaaAAAH.mp3",
+			"title": "aaaAAAH!",
+			"type": "sound"},
 		"they_want_us": {
 			"filename": "they_want_us.mp3", 
 			"title": "They want us", 
