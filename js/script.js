@@ -110,9 +110,17 @@ var sounds = {
 			"filename": "doomhammer_ooh.mp3",
 			"title": "Doomhammer, ooh!",
 			"type": "sound"},
+		"i_will_be_streaming_for_the_rest_of_my_life": {
+			"filename": "i_will_be_streaming_for_the_rest_of_my_life.mp3",
+			"title": "I will be streaming...",
+			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
+			"type": "loop"},
+		"pizza_pizza": {
+			"filename": "pizza_pizza.mp3",
+			"title": "Pizza Pizza, not sure on the lyrics after that",
 			"type": "loop"},
 		"they_want_us": {
 			"filename": "they_want_us.mp3", 
