@@ -47,26 +47,22 @@ var sounds = {
 			"title": "Panda Time",
 			"type": "loop",
 			"key": "p"},
-		"aaaah_thats_harsh": {
-			"filename": "aaaah_thats_harsh.mp3",
-			"title": "AAh that's harsh",
-			"type": "sound"},
-		"aww_poor_teldo": {
-			"filename": "aww_poor_teldo.mp3",
-			"title": "Aww poor Teldo",
-			"type": "sound"},
 		"damn": {
 			"filename": "damn.mp3",
 			"title": "Damn!",
 			"type": "sound",
 			"key": "d"},
+		"aww_yeah": {
+			"filename": "aww_yeah.mp3",
+			"title": "Aww Yeah",
+			"type": "sound"},
+		"bloo_bloop": {
+			"filename": "bloo_bloop.mp3",
+			"title": "Bloo Bloop",
+			"type": "sound"},
 		"he_could_kill_me": {
 			"filename": "he_could_kill_me.mp3",
 			"title": "He could kill me!",
-			"type": "sound"},
-		"hungry_for_pandatime": {
-			"filename": "hungry_for_pandatime.mp3",
-			"title": "Hungry for pandatime",
 			"type": "sound"},
 		"oh_my_got": {
 			"filename": "oh_my_got.mp3",
@@ -77,6 +73,19 @@ var sounds = {
 			"title": "Wow",
 			"type": "sound",
 			"key": "w"},
+		"okaaay": {
+			"filename": "okaaay.mp3",
+			"title": "Okaaay",
+			"type": "sound"},
+		"hihihihi": {
+			"filename": "hihihihi.mp3",
+			"title": "HiHiHiHi",
+			"type": "sound"},
+		"bloolooloop": {
+			"filename": "bloolooloop.mp3",
+			"title": "BlooLooLoop!",
+			"type": "sound",
+			"key": "b"},
 		"they_want_us": {
 			"filename": "they_want_us.mp3", 
 			"title": "They want us", 
@@ -89,12 +98,7 @@ var sounds = {
 		"more_sexy_music": {
 			"filename": "more_sexy_music.mp3",
 			"title": "More sexy music",
-			"type": "loop"},
-		"just_you_know_why": {
-			"filename": "just_you_know_why.mp3",
-			"title": "Just you know why",
-			"type": "loop",
-			"key": "j"}
+			"type": "loop"}
 		};
 
 var soundKeys = Object.keys(sounds);
