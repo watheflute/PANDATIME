@@ -114,6 +114,10 @@ var sounds = {
 			"filename": "i_will_be_streaming_for_the_rest_of_my_life.mp3",
 			"title": "I will be streaming...",
 			"type": "sound"},
+		"niah": {
+			"filename": "niah.mp3",
+			"title": 'Special button for Zeparrot <img src="img/zeparrot.png" alt="" />',
+			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
