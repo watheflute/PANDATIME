@@ -90,6 +90,26 @@ var sounds = {
 			"filename": "aaaAAAH.mp3",
 			"title": "aaaAAAH!",
 			"type": "sound"},
+		"huoaww": {
+			"filename": "huoaww.mp3",
+			"title": "HUOAWWW!!!",
+			"type": "sound"},
+		"the_dream_guys": {
+			"filename": "the_dream_guys.mp3",
+			"title": "The DREAM Guys!",
+			"type": "sound"},
+		"nooo": {
+			"filename": "nooo.mp3",
+			"title": "NOOOOO! NNOOOOOAAAAHaaha!",
+			"type": "sound"},
+		"bam": {
+			"filename": "bam.mp3",
+			"title": "BAM!",
+			"type": "sound"},
+		"teldo_singing_pandatime": {
+			"filename": "teldo_singing_pandatime.mp3",
+			"title": "Teldo singing Pandatime",
+			"type": "loop"},
 		"they_want_us": {
 			"filename": "they_want_us.mp3", 
 			"title": "They want us", 
