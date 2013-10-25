@@ -118,13 +118,46 @@ var sounds = {
 			"filename": "niah.mp3",
 			"title": 'Special button for Zeparrot <img src="img/zeparrot.png" alt="" />',
 			"type": "sound"},
+		"that_ooze_is_going_to_like_that": {
+			"filename": "that_ooze_is_going_to_like_that.mp3",
+			"title": "That Ooze is going to like that",
+			"type": "sound"},
+		"om_nom_nom_nom": {
+			"filename": "om_nom_nom_nom.mp3",
+			"title": '<img src="img/chogath.png" alt="" /> Om Nom Nom Nom Nom',
+			"type": "sound"},
+		"mouth_fart": {
+			"filename": "mouth_fart.mp3",
+			"title": "Mouth fart",
+			"type": "sound",
+			"key": "m"},
+		"give_up": {
+			"filename": "give_up.mp3",
+			"title": "Give up!!",
+			"type": "sound"},
+		"im_stronger_than_you": {
+			"filename": "im_stronger_than_you.mp3",
+			"title": "I'm stronger than you!",
+			"type": "sound"},
+		"woops": {
+			"filename": "woops.mp3",
+			"title": "Woops!",
+			"type": "sound"},
+		"sticky_pup": {
+			"filename": "sticky_pup.mp3",
+			"title": "Sticky pup",
+			"type": "sound"},
+		"eeeeh_ne_neeh_ne_neh": {
+			"filename": "eeeeh_ne_neeh_ne_neh.mp3",
+			"title": "Eeeh ne neeeh ne ne",
+			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
 			"type": "loop"},
 		"pizza_pizza": {
 			"filename": "pizza_pizza.mp3",
-			"title": "Pizza Pizza, not sure on the lyrics after that",
+			"title": "Pizza Pizza",
 			"type": "loop"},
 		"they_want_us": {
 			"filename": "they_want_us.mp3", 
