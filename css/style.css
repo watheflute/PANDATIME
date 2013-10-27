@@ -182,6 +182,11 @@ img {
 	width: 250px;
 }
 
-#soundDiv, #loopDiv {
+.center {
 	text-align: center;
 }
+
+.float-right {
+	float: right;
+}
+
