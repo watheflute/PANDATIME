@@ -33,6 +33,11 @@ var sounds = {
 			"title": "Xeph AaaaAhAH", 
 			"type": "sound",
 			"key": "x"},
+		"mouth_fart": {
+			"filename": "mouth_fart.mp3",
+			"title": '<img src="img/mouth_fart.gif" alt="" />',
+			"type": "sound",
+			"key": "m"},
 		"xeph_schmetterling": {
 			"filename": "xeph_schmetterling.mp3",
 			"title": "SCHMETTERLING!",
@@ -126,11 +131,6 @@ var sounds = {
 			"filename": "om_nom_nom_nom.mp3",
 			"title": '<img src="img/chogath.png" alt="" /> Om Nom Nom Nom Nom',
 			"type": "sound"},
-		"mouth_fart": {
-			"filename": "mouth_fart.mp3",
-			"title": "Mouth fart",
-			"type": "sound",
-			"key": "m"},
 		"give_up": {
 			"filename": "give_up.mp3",
 			"title": "Give up!!",
