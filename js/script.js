@@ -35,7 +35,7 @@ var sounds = {
 			"key": "x"},
 		"mouth_fart": {
 			"filename": "mouth_fart.mp3",
-			"title": '<img src="img/mouth_fart.gif" alt="" />',
+			"title": '<img src="img/mouth_fart.gif" alt="" /><br />"I don\'t sound<br />like that" -<br />Teldo 2013',
 			"type": "sound",
 			"key": "m"},
 		"xeph_schmetterling": {
@@ -113,7 +113,7 @@ var sounds = {
 			"type": "sound"},
 		"doomhammer_ooh": {
 			"filename": "doomhammer_ooh.mp3",
-			"title": "Doomhammer, ooh!",
+			"title": '<img src="img/doomhammer_ooh.png" alt="" /> ooh!',
 			"type": "sound"},
 		"i_will_be_streaming_for_the_rest_of_my_life": {
 			"filename": "i_will_be_streaming_for_the_rest_of_my_life.mp3",
@@ -164,6 +164,10 @@ var sounds = {
 			"title": "Evil laugh",
 			"type": "sound",
 			"key": "e"},
+		"makes_me_happy": {
+			"filename": "makes_me_happy.mp3",
+			"title": "Makes me HAPPY!",
+			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
