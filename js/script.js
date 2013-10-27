@@ -33,11 +33,6 @@ var sounds = {
 			"title": "Xeph AaaaAhAH", 
 			"type": "sound",
 			"key": "x"},
-		"mouth_fart": {
-			"filename": "mouth_fart.mp3",
-			"title": '<img src="img/mouth_fart.gif" alt="" /><br />"I don\'t sound<br />like that" -<br />Teldo 2013',
-			"type": "sound",
-			"key": "m"},
 		"xeph_schmetterling": {
 			"filename": "xeph_schmetterling.mp3",
 			"title": "SCHMETTERLING!",
@@ -127,6 +122,11 @@ var sounds = {
 			"filename": "that_ooze_is_going_to_like_that.mp3",
 			"title": "That Ooze is going to like that",
 			"type": "sound"},
+		"mouth_fart": {
+			"filename": "mouth_fart.mp3",
+			"title": '<img src="img/mouth_fart.png" alt="" /> Mouth fart',
+			"type": "sound",
+			"key": "m"},
 		"om_nom_nom_nom": {
 			"filename": "om_nom_nom_nom.mp3",
 			"title": '<img src="img/chogath.png" alt="" /> Om Nom Nom Nom Nom',
@@ -188,6 +188,10 @@ var sounds = {
 		"more_sexy_music": {
 			"filename": "more_sexy_music.mp3",
 			"title": "More sexy music",
+			"type": "loop"},
+		"digimon": {
+			"filename": "digimon.mp3",
+			"title": 'Pokemon music <img src="img/kappa.png" alt="" />',
 			"type": "loop"}
 		};
 
