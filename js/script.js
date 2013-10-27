@@ -168,6 +168,10 @@ var sounds = {
 			"filename": "makes_me_happy.mp3",
 			"title": "Makes me HAPPY!",
 			"type": "sound"},
+		"what_time_is_it": {
+			"filename": "what_time_is_it.mp3",
+			"title": "What time is it?",
+			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
