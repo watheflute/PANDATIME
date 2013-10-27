@@ -73,6 +73,7 @@ fieldset, #links {
 
 legend {
 	color: white;
+	text-align: left;
 }
 
 #stop {
