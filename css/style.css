@@ -105,6 +105,8 @@ a {
 
 #links {
 	margin-top: 10px;
+	float: left;
+	margin-right: 20px;
 }
 
 #links td {
@@ -169,4 +171,13 @@ a {
 
 img {
 	vertical-align: bottom;
+}
+
+#bunnyPanda {
+	float: right;
+	text-align: center;
+}
+
+#bunnyPanda img {
+	width: 250px;
 }

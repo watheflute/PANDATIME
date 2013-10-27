@@ -157,7 +157,7 @@ var sounds = {
 			"type": "sound"},
 		"more_evidence": {
 			"filename": "more_evidence.mp3",
-			"title": "More evidence",
+			"title": "More fart evidence",
 			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
