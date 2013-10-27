@@ -155,6 +155,10 @@ var sounds = {
 			"filename": "tuturu.mp3",
 			"title": "Tuturuuu!",
 			"type": "sound"},
+		"more_evidence": {
+			"filename": "more_evidence.mp3",
+			"title": "More evidence",
+			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
