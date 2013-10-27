@@ -153,7 +153,7 @@ var sounds = {
 			"type": "sound"},
 		"tuturu": {
 			"filename": "tuturu.mp3",
-			"title": "Tuturuuu!",
+			"title": '<img src="img/tuturuu.png" alt="" /> Tuturuuu!',
 			"type": "sound"},
 		"more_evidence": {
 			"filename": "more_evidence.mp3",
