@@ -159,6 +159,11 @@ var sounds = {
 			"filename": "more_evidence.mp3",
 			"title": "More fart evidence",
 			"type": "sound"},
+		"evil_laugh": {
+			"filename": "evil_laugh.mp3",
+			"title": "Evil laugh",
+			"type": "sound",
+			"key": "e"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
