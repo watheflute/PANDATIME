@@ -39,7 +39,7 @@ var sounds = {
 			"type": "sound"},
 		"gg": {
 			"filename": "german.mp3",
-			"title": '<img src="img/gg.png" alt="" /> NOT A GG BUTTON ANYMORE!!!',
+			"title": '<img src="img/gg.png" alt="" /> button',
 			"type": "sound",
 			"key": "g"},
 		"panda_time": {
