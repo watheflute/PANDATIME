@@ -67,13 +67,22 @@ var sounds = {
 			"filename": "the_dream_guys.mp3",
 			"title": "The DREAM Guys!",
 			"type": "sound"},
-		"nooo": {
-			"filename": "nooo.mp3",
-			"title": "NOOOOO! NNOOOOOAAAAHaaha!",
-			"type": "sound"},
 		"bam": {
 			"filename": "bam.mp3",
 			"title": "BAM!",
+			"type": "sound"},
+		"mouth_fart": {
+			"filename": "mouth_fart.mp3",
+			"title": '<img src="img/mouth_fart.png" alt="" /> Mouth fart',
+			"type": "sound",
+			"key": "m"},
+		"hihihi": {
+			"filename": "hihihi.mp3",
+			"title": "Hihihi!",
+			"type": "sound"},
+		"nooo": {
+			"filename": "nooo.mp3",
+			"title": "NOOOOO! NNOOOOOAAAAHaaha!",
 			"type": "sound"},
 		"niah": {
 			"filename": "niah.mp3",
@@ -83,11 +92,11 @@ var sounds = {
 			"filename": "that_ooze_is_going_to_like_that.mp3",
 			"title": "That Ooze is going to like that",
 			"type": "sound"},
-		"mouth_fart": {
-			"filename": "mouth_fart.mp3",
-			"title": '<img src="img/mouth_fart.png" alt="" /> Mouth fart',
+		"evil_laugh": {
+			"filename": "evil_laugh.mp3",
+			"title": "Evil laugh",
 			"type": "sound",
-			"key": "m"},
+			"key": "e"},
 		"om_nom_nom_nom": {
 			"filename": "om_nom_nom_nom.mp3",
 			"title": '<img src="img/chogath.png" alt="" /> Om Nom Nom Nom Nom',
@@ -112,11 +121,6 @@ var sounds = {
 			"filename": "more_evidence.mp3",
 			"title": "More fart evidence",
 			"type": "sound"},
-		"evil_laugh": {
-			"filename": "evil_laugh.mp3",
-			"title": "Evil laugh",
-			"type": "sound",
-			"key": "e"},
 		"what_time_is_it": {
 			"filename": "what_time_is_it.mp3",
 			"title": "It's time...",
@@ -140,10 +144,6 @@ var sounds = {
 		"evil_laugh_fusion": {
 			"filename": "evil_laugh_fusion.mp3",
 			"title": "Evil laugh Fusion!",
-			"type": "sound"},
-		"hihihi": {
-			"filename": "hihihi.mp3",
-			"title": "Hihihi!",
 			"type": "sound"},
 		"im_going_in": {
 			"filename": "im_going_in.mp3",
@@ -223,7 +223,7 @@ var sounds = {
 			"type": "loop"},
 		"pizza_pizza": {
 			"filename": "pizza_pizza.mp3",
-			"title": "Pizza Pizza Teldo Bwunnie <3",
+			"title": '<img src="img/pizza.png" alt="" /> Pizza Pizza Teldo Bwunnie <3',
 			"type": "loop"},
 		"they_want_us": {
 			"filename": "they_want_us.mp3", 
@@ -232,7 +232,7 @@ var sounds = {
 			"key": "t"},
 		"sexy_music": {
 			"filename": "sexy_music.mp3",
-			"title": "Sexy Music",
+			"title": '<img src="img/saxo.png" alt="" /> Sexy Music',
 			"type": "loop"},
 		"more_sexy_music": {
 			"filename": "more_sexy_music.mp3",
@@ -248,7 +248,7 @@ var sounds = {
 			"type": "loop"},
 		"nya_nya_nya_nya_loop": {
 			"filename": "nya_nya_nya_nya_loop.mp3",
-			"title": "Listen to this loop more than 1 minute, I DARE YOU",
+			"title": "Listen to this more than 1 minute, I DARE YOU",
 			"type": "loop"}
 		};
 
