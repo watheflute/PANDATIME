@@ -26,7 +26,7 @@ var sounds = {
 			"key": "o"},
 		"teldo_panda_time": {
 			"filename": "teldo_panda_time.mp3",
-			"title": "Pandatime!",
+			"title": '<img src="img/pandatime.png" alt="" /> Pandatime!',
 			"type": "sound"},
 		"xeph_aaahaha": {
 			"filename": "xeph_aaahaha.mp3", 
@@ -35,7 +35,7 @@ var sounds = {
 			"key": "x"},
 		"xeph_schmetterling": {
 			"filename": "xeph_schmetterling.mp3",
-			"title": "SCHMETTERLING!",
+			"title": '<img src="img/schmetterling.png" alt="" /> SCHMETTERLING!',
 			"type": "sound"},
 		"gg": {
 			"filename": "gg.mp3",
@@ -44,7 +44,7 @@ var sounds = {
 			"key": "g"},
 		"panda_time": {
 			"filename": "panda_time.mp3",
-			"title": "Panda Time",
+			"title": 'Panda Time',
 			"type": "loop",
 			"key": "p"},
 		"aww_yeah": {
@@ -73,12 +73,12 @@ var sounds = {
 			"type": "sound"},
 		"mouth_fart": {
 			"filename": "mouth_fart.mp3",
-			"title": '<img src="img/mouth_fart.png" alt="" /> Mouth fart',
+			"title": '<img src="img/mouth_fart.gif" alt="" /> Mouth fart',
 			"type": "sound",
 			"key": "m"},
 		"hihihi": {
 			"filename": "hihihi.mp3",
-			"title": "Hihihi!",
+			"title": '<img src="img/hihihi.png" alt="" /> Hihihi!',
 			"type": "sound"},
 		"nooo": {
 			"filename": "nooo.mp3",
@@ -90,7 +90,7 @@ var sounds = {
 			"type": "sound"},
 		"that_ooze_is_going_to_like_that": {
 			"filename": "that_ooze_is_going_to_like_that.mp3",
-			"title": "That Ooze is going to like that",
+			"title": '<img src="img/ooze.png" alt="" /> Hmm that Ooze...',
 			"type": "sound"},
 		"evil_laugh": {
 			"filename": "evil_laugh.mp3",
@@ -111,7 +111,7 @@ var sounds = {
 			"type": "sound"},
 		"sticky_pup": {
 			"filename": "sticky_pup.mp3",
-			"title": "Sticky pup",
+			"title": '<img src="img/stickypup.png" alt="" /> Sticky pup',
 			"type": "sound"},
 		"tuturu": {
 			"filename": "tuturu.mp3",
@@ -139,7 +139,7 @@ var sounds = {
 			"type": "sound"},
 		"but_you_re_a_bitch": {
 			"filename": "but_you_re_a_bitch.mp3",
-			"title": "if I call someone a bitch...",
+			"title": '<img src="img/bitch.png" alt="" /> if I call someone a bitch...',
 			"type": "sound"},
 		"evil_laugh_fusion": {
 			"filename": "evil_laugh_fusion.mp3",
@@ -151,31 +151,31 @@ var sounds = {
 			"type": "sound"},
 		"kacey_aaaaah": {
 			"filename": "kacey_aaaaah.mp3",
-			"title": "AAAAAH!",
+			"title": '<img src="img/bidoof.gif" alt="" /> AAAAAH!',
 			"type": "kacey"},
 		"kacey_laugh": {
 			"filename": "kacey_laugh.mp3",
-			"title": "uhuhuhuhuh?",
+			"title": '<img src="img/pika.png" alt="" /> uhuhuhuhuh?',
 			"type": "kacey"},
 		"kacey_laugh2": {
 			"filename": "kacey_laugh2.mp3",
-			"title": "uh, ha! uhuhuhuh!",
+			"title": '<img src="img/bulba.gif" alt="" /> uh, ha! uhuhuhuh!',
 			"type": "kacey"},
 		"kacey_oh_no": {
 			"filename": "kacey_oh_no.mp3",
-			"title": "Oh, Noooo!",
+			"title": '<img src="img/pidgey.gif" alt="" /> Oh, Noooo!',
 			"type": "kacey"},
 		"kacey_oooooh": {
 			"filename": "kacey_oooooh.mp3",
-			"title": "Oooooh",
+			"title": '<img src="img/charmander.gif" alt="" /> Oooooh',
 			"type": "kacey"},
 		"kacey_speaks_japanese": {
 			"filename": "kacey_speaks_japanese.mp3",
-			"title": "Kacey speaks Japanese",
+			"title": '<img src="img/ponyta.gif" alt="" /> Kacey speaks Japanese',
 			"type": "kacey"},
 		"kacey_waaa": {
 			"filename": "kacey_waaa.mp3",
-			"title": "Waaah!",
+			"title": '<img src="img/caterpie.gif" alt="" /> Waaah!',
 			"type": "kacey"},
 		"nyark_nyark_oooh_oh_oh": {
 			"filename": "nyark_nyark_oooh_oh_oh.mp3",
@@ -191,7 +191,7 @@ var sounds = {
 			"type": "sound"},
 		"kacey_oouuuh": {
 			"filename": "kacey_oouuuh.mp3",
-			"title": "Ooooooh",
+			"title": '<img src="img/paras.gif" alt="" /> Ooooooh',
 			"type": "kacey"},
 		"oulalalalalaaaaaa": {
 			"filename": "oulalalalalaaaaaa.mp3",
@@ -199,11 +199,11 @@ var sounds = {
 			"type": "sound"},
 		"pfft_ohhh_oh_oh": {
 			"filename": "pfft_ohhh_oh_oh.mp3",
-			"title": "Bricks were shat",
+			"title": '<img src="img/brick.png" alt="" /> Bricks were shat',
 			"type": "sound"},
 		"strange_sounds": {
 			"filename": "strange_sounds.mp3",
-			"title": "guh guh guh, Guh! hngg",
+			"title": '<img src="img/beedrill.gif" alt="" /> guh guh guh, Guh! hngg',
 			"type": "kacey"},
 		"teeemoooo": {
 			"filename": "teeemoooo.mp3",
@@ -244,11 +244,15 @@ var sounds = {
 			"type": "loop"},
 		"nope_nope_loop": {
 			"filename": "nope_nope_loop.mp3",
-			"title": "Nope, nope, nope, nope",
+			"title": '<img src="img/nope.jpg" alt="" /> Nope, nope, nope, nope',
 			"type": "loop"},
 		"nya_nya_nya_nya_loop": {
 			"filename": "nya_nya_nya_nya_loop.mp3",
-			"title": "Listen to this more than 1 minute, I DARE YOU",
+			"title": "Ayayayaya",
+			"type": "loop"},
+		"pummeluff": {
+			"filename": "pummeluff.mp3",
+			"title": '<img src="img/pumeluff.gif" alt="" /> La, lala lala Pumeluff...',
 			"type": "loop"}
 		};
 
