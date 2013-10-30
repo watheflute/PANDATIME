@@ -257,7 +257,11 @@ var sounds = {
 		"pummeluff": {
 			"filename": "pummeluff.mp3",
 			"title": '<img src="img/pumeluff.gif" alt="" /> La, lala lala Pumeluff...',
-			"type": "loop"}
+			"type": "loop"},
+		"skev_loop": {
+			"filename": "skev_loop.mp3",
+			"title": '<img src="img/hump.gif" alt="" /> HUMP <img src="img/hump.gif" alt="" /> ALL <img src="img/hump.gif" alt="" /> THE <img src="img/hump.gif" alt="" /> THINGS! <img src="img/hump.gif" alt="" />',
+			"type": "loop"},
 		};
 
 var soundKeys = Object.keys(sounds);
