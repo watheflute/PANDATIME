@@ -225,6 +225,10 @@ var sounds = {
 			"filename": "that_was_scary.mp3",
 			"title": "SURPRISE VUXXY BUTTSECKS",
 			"type": "sound"},
+		"he_just_hue_hued_all_of_us": {
+			"filename": "he_just_hue_hued_all_of_us.mp3",
+			"title": "He just Hue Hue'd all of us!",
+			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
