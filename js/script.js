@@ -38,7 +38,7 @@ var sounds = {
 			"title": '<img src="img/schmetterling.png" alt="" /> SCHMETTERLING!',
 			"type": "sound"},
 		"gg": {
-			"filename": "german.mp3",
+			"filename": "gg.mp3",
 			"title": '<img src="img/gg.png" alt="" /> button',
 			"type": "sound",
 			"key": "g"},
@@ -83,10 +83,6 @@ var sounds = {
 		"nooo": {
 			"filename": "nooo.mp3",
 			"title": "NOOOOO! NNOOOOOAAAAHaaha!",
-			"type": "sound"},
-		"niah": {
-			"filename": "niah.mp3",
-			"title": 'Special button for Zeparrot <img src="img/zeparrot.png" alt="" />',
 			"type": "sound"},
 		"that_ooze_is_going_to_like_that": {
 			"filename": "that_ooze_is_going_to_like_that.mp3",
