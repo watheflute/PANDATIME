@@ -221,6 +221,10 @@ var sounds = {
 			"filename": "shiggy.mp3",
 			"title": '<img src="img/shiggy.gif" alt="" /> SHIGGYYY!!',
 			"type": "sound"},
+		"that_was_scary": {
+			"filename": "that_was_scary.mp3",
+			"title": "SURPRISE VUXXY BUTTSECKS",
+			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
