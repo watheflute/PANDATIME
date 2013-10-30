@@ -213,6 +213,14 @@ var sounds = {
 			"filename": "yarr_yu_yarr_yu_yarr_oouh.mp3",
 			"title": "Yarr yu yarr yu yarr OOOOh!",
 			"type": "sound"},
+		"pika_pi": {
+			"filename": "pika_pi.mp3",
+			"title": '<img src="img/pikapi.png" alt="" /> Pika pi!',
+			"type": "sound"},
+		"shiggy": {
+			"filename": "shiggy.mp3",
+			"title": '<img src="img/shiggy.gif" alt="" /> SHIGGYYY!!',
+			"type": "sound"},
 		"teldo_singing_pandatime": {
 			"filename": "teldo_singing_pandatime.mp3",
 			"title": "Teldo singing Pandatime",
