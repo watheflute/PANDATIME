@@ -145,6 +145,14 @@ var sounds = {
 			"filename": "im_going_in.mp3",
 			"title": "I'm going IN!",
 			"type": "sound"},
+		"omygosh_kacey_oh_ya": {
+			"filename": "omygosh_kacey_oh_ya.mp3",
+			"title": "Teldogasm",
+			"type": "sound"},
+		"oh": {
+			"filename": "oh.mp3",
+			"title": "Oh!",
+			"type": "sound"},
 		"kacey_aaaaah": {
 			"filename": "kacey_aaaaah.mp3",
 			"title": '<img src="img/bidoof.gif" alt="" /> AAAAAH!',
@@ -176,14 +184,6 @@ var sounds = {
 		"nyark_nyark_oooh_oh_oh": {
 			"filename": "nyark_nyark_oooh_oh_oh.mp3",
 			"title": "Ha Nyark nyark OOOOh oh oh",
-			"type": "sound"},
-		"oh": {
-			"filename": "oh.mp3",
-			"title": "Oh!",
-			"type": "sound"},
-		"omygosh_kacey_oh_ya": {
-			"filename": "omygosh_kacey_oh_ya.mp3",
-			"title": "Teldogasm",
 			"type": "sound"},
 		"kacey_oouuuh": {
 			"filename": "kacey_oouuuh.mp3",
