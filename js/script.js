@@ -2,6 +2,9 @@ var audioContext;
 var soundboard = $("#soundboard");
 var buttonBackgroundColor = "rgba(0, 0, 0, 0.2)";
 var isUltraPandaTime = false;
+var humpTime = null;
+var humpColours = ["red", "lime", "cyan", "yellow", "white"];
+var currentHumpColour = 0;
 
 var sounds = {
 		"aaahhh": {
@@ -351,12 +354,41 @@ function playSound(key) {
 
 function playLoop(key) {
 	if (sounds[key].source) {
+		if (key == "skev_loop") {
+			$("#sni").css("display", "none");
+			clearInterval(humpTime);
+			
+			if (!isUltraPandaTime) {
+				$("body").css("background", 'url("img/panda.jpg") no-repeat center center fixed');
+				$("body").css("-webkit-background-size", "cover");
+				$("body").css("-moz-background-size", "cover");
+				$("body").css("-o-background-size", "cover");
+				$("body").css("background-size", "cover");
+			}
+			else {
+				$("body").css("background", 'url("img/stars.gif") repeat center center fixed');
+				$("body").css("-webkit-background-size", "auto");
+				$("body").css("-moz-background-size", "auto");
+				$("body").css("-o-background-size", "auto");
+				$("body").css("background-size", "auto");
+			}
+		}
+		
 		sounds[key].source.stop(0);
 		sounds[key].source.onended = null;
 		sounds[key].source = null;
 		$("#" + key).css("background-color", buttonBackgroundColor);
 	}
 	else {
+		if (key == "skev_loop") {
+			$("#sni").css("display", "block");
+			$("#sni_gif").height($(window).height() * 0.5);
+			$("#sni").css("top", $("#skev_loop").position().top - $("#sni").height());
+			$("#sni").css("left", ($(window).width() - $("#sni").width()) / 2);
+			humphump();
+			humpTime = setInterval(humphump, 50);
+		}
+		
 		sounds[key].source = audioContext.createBufferSource();
 		sounds[key].source.buffer = sounds[key].buffer;
 		sounds[key].source.connect(audioContext.destination);
@@ -392,6 +424,26 @@ $(document).keypress(function(k) {
 function stopAllSounds() {
 	for (var key in sounds) {
 		if (sounds[key].source) {
+			if (key == "skev_loop") {
+				$("#sni").css("display", "none");
+				clearInterval(humpTime);
+				
+				if (!isUltraPandaTime) {
+					$("body").css("background", 'url("img/panda.jpg") no-repeat center center fixed');
+					$("body").css("-webkit-background-size", "cover");
+					$("body").css("-moz-background-size", "cover");
+					$("body").css("-o-background-size", "cover");
+					$("body").css("background-size", "cover");
+				}
+				else {
+					$("body").css("background", 'url("img/stars.gif") repeat center center fixed');
+					$("body").css("-webkit-background-size", "auto");
+					$("body").css("-moz-background-size", "auto");
+					$("body").css("-o-background-size", "auto");
+					$("body").css("background-size", "auto");
+				}
+			}
+			
 			sounds[key].source.stop(0);
 			sounds[key].source.onended = null;
 			sounds[key].source = null;			
@@ -450,6 +502,15 @@ function ultraPandatime() {
 			sounds["panda_time"].source = null;
 			$("#" + "panda_time").css("background-color", buttonBackgroundColor);
 		}
+	}
+}
+
+function humphump() {
+	$("body").css("background", humpColours[currentHumpColour] + " repeat center center fixed");
+	currentHumpColour++;
+	
+	if (currentHumpColour >= humpColours.length) {
+		currentHumpColour = 0;
 	}
 }
 

@@ -191,3 +191,7 @@ img {
 	float: right;
 }
 
+#sni {
+	display: none;
+	position: absolute;
+}
